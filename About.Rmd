@@ -1,0 +1,25 @@
+---
+title: "Shiny Application for Predicting Child Height"
+---
+
+## Overview
+
+The shiny application is created as part of the Coursera Data Science project for Development of Data Product Class. 
+This is a very simple application to predict child height if the user choose parent height. This application uses the galton data from UsingR package. 
+
+## Steps 
+
+Please follow the below steps -
+
+- Enter Parent Height by appropriately selecting the "up" or "down" arrow in the   box below field -"Parent Height inches"
+- You can choose parent height from the range 64 inches to 73 inches. 
+- The application will not allow you to enter parent height less than 64 inches    or more than 73 inches
+- By default 68 inche will be displayed in the input screen. 
+- After choosing appropriate parent height ,click on the button "Submit"
+- The right hand part of the screen will display what value you entered and the    predicted child height.
+
+## Additional Note
+
+The application uses the galton data from UsingR package to fit a linear regression between child height vs parent height. And based on the regression it predicts the child height given a parent height. 
+
+

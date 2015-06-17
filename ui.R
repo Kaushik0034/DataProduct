@@ -8,11 +8,23 @@ shinyUI(pageWithSidebar(
   ),
   mainPanel(
     
-    h3("Results of Prediction"),
-    h4('You Entered Parent Height'),
-    verbatimTextOutput("InputValue"),
-    h4("Here is the predicted Child Height"),
-    verbatimTextOutput("Prediction")
+    tabsetPanel(
+      
+      tabPanel(
+      "App",
+      h3("Results of Prediction"),
+      h4('You Entered Parent Height'),
+      verbatimTextOutput("InputValue"),
+      h4("Here is the predicted Child Height"),
+      verbatimTextOutput("Prediction") 
+              ),
+      tabPanel(
+        "About",mainPanel(includeMarkdown("About.Rmd")
+                          )
+         
+               )
+               )
+    
   )
   )
   )
